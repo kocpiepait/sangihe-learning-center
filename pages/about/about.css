@@ -1,0 +1,349 @@
+/* FONT IMPOR */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap');
+
+
+/* basic rules */
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* HEADER START */
+header{
+    padding: 15px 7%;    
+    display: block;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.head_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo_img{
+    width: 318px;
+    height: 105px;
+}
+
+.hamburger_menu{
+    display: none;
+}
+
+.navbar{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+
+.navbar a{
+    margin: 10px; 
+    text-decoration: none;
+    color: #000;   
+    padding: 15px;
+    font-weight: 600;
+}
+/* HEADER END */
+
+/* MAIN START */
+
+/* ABOUT HEAD START */
+.About_Section_Head{
+    /* background-color: #000; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;    
+}
+
+.about_head_container{
+    width: 70%;
+    height: max-content;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about_head_container h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.about_head_img{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3%;
+   position: absolute;
+}
+
+.about_head_img img{
+    width: 50%;
+
+}
+/* ABOUT HEAD END */
+
+/* ABOUT DESK START */
+.About_section_Desck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17%;
+    z-index: 999;
+    position: relative;
+   
+}
+
+.about_desck_container{
+    background-color: #247ff563;
+    width: 90%;
+    height: max-content;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+.about_desck_Tittle{
+    margin-top: 15%;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+}
+
+.about_desck_Tittle h2{
+    width: 70%;
+    font-weight: 500;
+    color: #ffffff ;
+}
+
+.about_desck_p{
+    padding: 4%;
+    text-align: center;
+}
+/* ABOUT DESK END */
+
+/* ABOUT LEMBAGA START */
+    .about_section_Lembaga{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .about_lembaga_container{
+        background-color: #FF8686;
+        width: 80%;
+        padding: 3%;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        
+    }
+
+    .lembaga_desck{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .lembaga_desck p{
+        width: 90%;
+        text-align: center;
+    }
+
+    .lembaga_img{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+        height: max-content;    
+    }
+
+    .lembaga_photo{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .lembaga_vector{
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .vector_img{
+        width: 55%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lembaga_vector img{
+        width: 140px;
+    }
+/* ABOUT LEMBAGA END */
+
+/* ABOUT PROFIL GURU START */
+    .About_Section_Profilguru{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .Profilguru_bg{
+        background-image: url(/asset/vector/Component\ 21.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        height: 3375px;
+        width: 100%;
+        position: relative;
+        top: -20%;
+    }
+/* ABOUT PROFIL GURU END */
+/* MAIN END */
+
+/* FOOTER START */
+footer{
+    background-color: #86C5FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.footer_container_fluid{
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    /* background-color: #E3BC20; */
+}
+
+.container_footer_content{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    /* background-color: #E01C1C; */
+    flex-wrap: wrap;
+    
+}
+
+.footer_addres{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer_brand{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1150px;
+    margin-top: 2rem;
+}
+
+.footer_brand img{
+    width: 200px;
+    height: 75px;
+    margin-bottom: 2rem;
+}
+
+.footer_sosmed{
+    display: flex;
+    gap: 30px;
+}
+
+.addres_desc{
+    width: 269px;
+    margin-top: 2rem;
+}
+
+.footer_navigasi{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_navigasi .nav-1{
+    margin-bottom: 5px;
+}
+
+.footer_navigasi a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_navigasi .nav-2{
+    margin-top: 1rem;
+}
+
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact h3{
+    margin-bottom: 5px;
+}
+
+.footer_contact a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_serti_container{
+    background-image: url(/asset/vector/Vector\ \(2\).png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_serti_teks{
+    margin-top: 2rem ;
+    text-align: center;  
+}
+/* FOOTER END */
+
+

@@ -1,0 +1,364 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap');
+
+/* MOBILE 425px DISPLAY */
+@media screen and (max-width: 425px) {
+/*===== HEADER START SECTION =====*/
+    .logo_img {
+        width: 200px;
+        height: 100px;
+        position: relative;
+        top: 9px;
+    }
+
+    header{
+        padding: 0 2%;
+    }
+
+    .navbar{
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: brown;    
+        width: 100%;
+        height: max-content;
+        transition: 0.3s;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger_menu{
+        display: block;
+        font-size: 40px;
+    }
+/*===== HEADER END SECTION =====*/
+
+/*===== HERO START SECTION =====*/
+.hero_section{
+    margin-top: 20%;
+    /* display: flex;
+    flex-direction: column; */
+    height: max-content;
+}
+
+.bg_vector{
+    background-image: url(/asset/vector/Component\ 19.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bg_vector .desc_tittle{
+    position: relative;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+   
+}
+
+.desc_tittle h1{
+    font-size: 30px;
+    text-align: center;
+    width: 400px ;
+}
+
+.bg_vector .desc_p{
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    width: 350px;
+}
+
+.btn_hero{
+    position: relative;
+    left: 0;
+    top: 6%;
+    width: 200px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.hero_img{
+    width: 100%;
+    height: 400px;
+    margin-left: 15%;
+}
+
+/*===== HERO END SECTION =====*/
+
+/*===== PROGRAM START SECTION =====*/
+.program_section{
+    width: 490px;
+    margin-top: -5rem;
+    height: 1650px;
+}
+
+.btn_program{
+    width: 400px;
+}
+
+.program_teks{
+    width: 329px;
+}
+
+.program_teks p{
+    font-size: 18px;
+    width: 270px;
+    font-weight: 300;
+}
+
+.program_card{
+    width: 400px;
+    gap: 20px;
+}
+
+.english_card{
+    margin: 0;
+}
+/*===== PROGRAM END SECTION =====*/
+
+/*===== ABOUT START SECTION =====*/
+.about_section{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 490px;
+}
+
+.about_img{
+    width: 490px;
+    gap: 20px;
+}
+
+.about_img .photo1{
+    height: 270px;
+}
+
+.about_img .component{
+    height: 100px;
+    width: 400px ;
+    margin-left: 2rem;
+}
+
+.about_teks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_teks h1{
+    font-size: 30px;
+    width: 300px;
+
+}
+
+.about_teks p{
+    font-size: 20px;
+    width: 400px;
+}
+
+.about_img2{
+    width: 490px;
+    gap: 20px;
+}
+
+.about_img2 .photo1{
+    height: 270px;
+    width: 490px;
+}
+
+.about_img2 .component2{
+    height: 100px;
+    width: 400px ;
+    margin-left: 2rem;
+}
+/*===== ABOUT END SECTION =====*/
+
+/*===== TESTIMONI START SECTION =====*/
+.testimoni_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 490px;
+    margin-bottom: 2rem;
+}
+
+.container_card_testimoni{
+    width: 490px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimoni_card{
+    margin: 0;
+    max-width: 300px;
+    height: 390px;
+}
+
+.testimoni_desc{
+    font-size: 20px;
+}
+
+.testimoni_teks h2{
+    font-size: 25px;
+}
+
+.testimoni_teks p{
+    font-size: 20px;
+    width: 400px;
+}    
+/*===== TESTIMONI END SECTION =====*/
+
+/*===== FOOTER START SECTION =====*/
+footer{
+    width: 490px;
+    flex-wrap: wrap;
+}
+
+.footer_brand{
+    height: 100px;
+    width: 370px;
+    align-items: center;
+}
+
+.footer_container_fluid{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer_addres{
+    margin-bottom: 2rem;
+}
+
+.container_footer_content{
+    gap: 1rem;
+    width: 50%;
+}
+
+.footer_serti_container{
+    width: 100%;
+    margin-top: 70%;
+}
+/*===== FOOTER END SECTION =====*/
+}
+
+@media screen and (max-width: 1024px){
+    /* HERO START */
+    .hero_section{
+        margin-bottom: 0;
+    }
+
+    .bg_vector{
+        width: 650px;
+        height: 600px;
+        background-size: contain;
+    }
+
+    .desc_tittle h1{
+        font-size: 35px;
+    }
+
+    .desc_p p{
+        font-size: 18px;
+        width: 400px;
+        margin-bottom: 5rem;
+    }
+
+
+    .btn_hero{
+        position: relative;
+        top: 0;
+    }
+
+
+    .hero_img img{
+        width: 372px;
+        height: 558px;
+    }
+
+    /* PROGRAM START */
+    .program_section{
+        position: relative;
+        margin-top: 0;
+    }
+
+
+    /* ABOUT SECTION */
+    .about_img{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_img .photo1{
+        width: 100%;
+    }
+
+    .about_img .component{
+        width: 70%;
+    }
+
+    .about_img2{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_img2 .photo1{
+        width: 100%;
+    }
+
+    
+    .about_img2 .component2{
+        width: 70%;
+    }
+
+
+    /* TESTIMONI START */
+    .container_card_testimoni{
+        width: 100%;
+    }
+
+    .testimoni_card{
+        width: 390px;
+    }
+
+    .footer_brand{
+        width: 90%;
+    }
+
+   .footer_container_fluid{
+       width: 90%;
+   }
+}
+
+
+

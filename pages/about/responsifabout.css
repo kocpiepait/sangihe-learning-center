@@ -1,0 +1,261 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap');
+
+/* MOBILE 425px DISPLAY */
+@media screen and (max-width: 425px) {
+/*===== HEADER START SECTION =====*/
+    .logo_img {
+        width: 200px;
+        height: 100px;
+        position: relative;
+        top: 9px;
+    }
+
+    header{
+        padding: 0 2%;
+    }
+
+    .navbar{
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: brown;    
+        width: 100%;
+        height: max-content;
+        transition: 0.3s;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger_menu{
+        display: block;
+        font-size: 40px;
+    }
+/*===== HEADER END SECTION =====*/
+
+/*===== ABOUT HEAD START SECTION =====*/
+       .About_Section_Head{
+        margin-top: 27%;
+        margin-bottom: 35%;
+       }
+       
+       .about_head_container h1{
+            font-size: 1.7rem;
+       }
+
+       .about_head_img{
+           margin-top: 15%;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .about_head_img img{
+           width: 90%;
+       }
+/*===== ABOUT HEAD END SECTION =====*/
+
+/*===== ABOUT DESCK START SECTION =====*/
+    .about_desck_container{
+        padding: 0;
+    }   
+
+    .about_desck_Tittle{
+           width: 100%;
+           padding: 0;
+           margin-top: 20%;
+           margin-bottom: 15%;
+       }
+
+       .about_desck_Tittle h2{
+           width: 100%;
+           font-size: 1.1rem;
+       }
+/*===== ABOUT DESCK END SECTION =====*/
+
+/*===== ABOUT LEMBAGA START SECTION =====*/
+    .about_lembaga_container{
+        width: 90%;
+        padding: 0;
+    }
+
+    .lembaga_desck{
+        width: 95%;
+    }
+
+    .lembaga_img{
+        width: 100%;
+        padding: 0;
+        order: -1;
+    }
+    .lembaga_photo{
+        width: 100%;
+        padding: 0;
+    }
+
+    .lembaga_photo img{
+        width: 100%;
+    }
+
+    .vector_img{
+        width: 100%;
+        padding: 3%;
+    }
+
+    .vector_img img{
+        width: 100px;
+    }
+/*===== ABOUT LEMBAGA END SECTION =====*/
+
+/*===== ABOUT PROFIL GURU START SECTION =====*/
+    .About_Section_Profilguru{
+        margin-top: 20%;
+    }
+
+    .Profilguru_bg{
+        width: 100%;
+        height: 7000px;
+        background-image: url(/asset/vector/Component\ 23.png);
+        background-size: contain;
+    }
+/*===== ABOUT PROFIL GURU END SECTION =====*/
+
+/*===== FOOTER START SECTION =====*/
+footer{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer_brand{
+    height: 100px;
+    width: 370px;
+    align-items: center;
+}
+
+.footer_container_fluid{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer_addres{
+    margin-bottom: 2rem;
+}
+
+.container_footer_content{
+    gap: 1rem;
+    width: 50%;
+}
+
+.footer_serti_container{
+    width: 100%;
+    margin-top: 70%;
+}
+/*===== FOOTER END SECTION =====*/
+}
+
+@media screen and (max-width: 1024px){
+    /* HERO START */
+    .hero_section{
+        margin-bottom: 0;
+    }
+
+    .bg_vector{
+        width: 650px;
+        height: 600px;
+        background-size: contain;
+    }
+
+    .desc_tittle h1{
+        font-size: 35px;
+    }
+
+    .desc_p p{
+        font-size: 18px;
+        width: 400px;
+        margin-bottom: 5rem;
+    }
+
+
+    .btn_hero{
+        position: relative;
+        top: 0;
+    }
+
+
+    .hero_img img{
+        width: 372px;
+        height: 558px;
+    }
+
+    /* PROGRAM START */
+    .program_section{
+        position: relative;
+        margin-top: 0;
+    }
+
+
+    /* ABOUT SECTION */
+    .about_img{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_img .photo1{
+        width: 100%;
+    }
+
+    .about_img .component{
+        width: 70%;
+    }
+
+    .about_img2{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_img2 .photo1{
+        width: 100%;
+    }
+
+    
+    .about_img2 .component2{
+        width: 70%;
+    }
+
+
+    /* TESTIMONI START */
+    .container_card_testimoni{
+        width: 100%;
+    }
+
+    .testimoni_card{
+        width: 390px;
+    }
+
+    .footer_brand{
+        width: 90%;
+    }
+
+   .footer_container_fluid{
+       width: 90%;
+   }
+}
+
+
+
