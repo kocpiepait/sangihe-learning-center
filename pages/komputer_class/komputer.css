@@ -20,7 +20,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 999;
     border-bottom: 1px solid #faf1f1;
     box-shadow: 0 1px 10px #c2b8b886;
 }
@@ -67,16 +67,18 @@ header{
 /* MAIN START */
 
 /* ABOUT HEAD START */
-.About_Section_Head{
-    /* background-color: #000; */
+.english_section{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10%;    
+    width: 100%;
+    height: max-content;
+    padding: 3% 0;
 }
 
-.about_head_container{
-    width: 70%;
+.english_container{
+    width: 90%;
     height: max-content;
     padding: 3%;
     display: flex;
@@ -85,159 +87,195 @@ header{
     font-family: 'Poppins', sans-serif;
 }
 
-.about_head_container h1{
+.english_container h1{
     font-size: 2.5rem;
     font-weight: 600;
+    /* width: 30%; */
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.about_head_img{
-    width: 90%;
+.english_serti{
     display: flex;
-    flex-direction: row-reverse;
-    padding: 3%;
-   position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.about_head_img img{
-    width: 50%;
+.english_serti h2{
+    padding: 3rem;
+    font-weight: 500;
+}
 
+.english_serti h3{
+    padding: 3rem;
+    font-weight: 500;
+    text-align: center;
+    width: 25%;
 }
 /* ABOUT HEAD END */
 
 /* ABOUT DESK START */
-.About_section_Desck{
+.next_section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 17%;
-    z-index: 999;
-    position: relative;
-   
+    width: 100%;
+    padding: 3% 0;
 }
 
-.about_desck_container{
-    background-color: #247ff563;
-    width: 90%;
+.next_section_container{
+    width: 60%;
     height: max-content;
     padding: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    border-radius: 20px;
-    border: 2px solid #ffffff;
+    font-weight: 300;
+    gap: 10%;
+    background-color: #86c4ff9f;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.about_desck_container{
+    width: 90%;
 }
 
 .about_desck_Tittle{
-    margin-top: 15%;
-    width: 100%;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1%;
-    display: flex;
+    margin-bottom: 5%;
 }
 
-.about_desck_Tittle h2{
-    width: 70%;
-    font-weight: 500;
-    color: #ffffff ;
+.about_desck_p span{
+    font-weight: 600;
 }
 
-.about_desck_p{
-    padding: 4%;
-    text-align: center;
+.next_card{
+    background-color: #FFA0A0;
+    height: 322px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.next_card h3{
+    color: #00000081;
+    margin-bottom: 10%;
+}
+
+.next_card_sec{
+    background-color: #AFF2A9;
+    height: 322px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.next_card_sec h3{
+    color: #00000081;
+    margin-bottom: 10%;
 }
 /* ABOUT DESK END */
 
 /* ABOUT LEMBAGA START */
-    .about_section_Lembaga{
+    .pilpro_section{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
         font-family: 'Poppins', sans-serif;
+        background-color: #85B6FF;
+        width: 100%;
+        padding: 3% 0;
     }
 
-    .about_lembaga_container{
-        background-color: #FF8686;
-        width: 80%;
-        padding: 3%;
-        display: flex;
-        justify-content: space-between;
-        border-radius: 20px;
-        flex-wrap: wrap;
-        
-    }
-
-    .lembaga_desck{
-        width: 30%;
+    .pilpro_container{
+        width: 70%;
+        padding: 2%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 3%;
     }
 
-    .lembaga_desck p{
-        width: 90%;
-        text-align: center;
+    .pilpro_head{
+        color: #ffffff;
+        margin-bottom: 5%;
     }
 
-    .lembaga_img{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3%;
-        height: max-content;    
-    }
-
-    .lembaga_photo{
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-    }
-
-    .lembaga_vector{
-        margin-top: 2rem;
+    .pilpro_card_container{
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .pilpro_card{
+    background-color: #FFFFFF;
+    display: flex;
+    width: 40%;
+    height: max-content;
+    padding: 3%;
+    flex-direction: column;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif; 
+    }
+
+    .Pcard_head{
+        display: flex;
+        align-items: center;
+        color: #3771C8;
+        padding: 2%;
+        gap: 1rem;
+    }
+
+    .Pcard_list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .Pcard_list_name{
+        display: flex;
         align-items: center;
     }
 
-    .vector_img{
-        width: 55%;
-        display: flex;
-        justify-content: space-around;
+    .Pcard_list_name img{
+        width: 25%;
+        padding: 0;
     }
 
-    .lembaga_vector img{
-        width: 140px;
+    .Pcard_list_name p{
+        position: relative;
+        right: 5%;
+    }
+
+    .Pcard_btm{
+        padding: 2% 0;
+        color: #FEC80A;
+    }
+
+    .Pcard_btn{
+        padding: 3% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Pcard_btn button{
+        background-color: #3771C8;
+        width: 130px;
+        padding: 3% 0;
+        border: 1px solid #FFD233;
+        color: #FDCD60;
+        font-family: 'Poppins', sans-serif; 
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 1rem;
     }
 /* ABOUT LEMBAGA END */
-
-/* ABOUT PROFIL GURU START */
-    .About_Section_Profilguru{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .Profilguru_bg{
-        background-image: url(/asset/vector/Component\ 21.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:contain;
-        height: 3375px;
-        width: 100%;
-        position: relative;
-        top: -20%;
-    }
-/* ABOUT PROFIL GURU END */
 /* MAIN END */
 
 /* FOOTER START */

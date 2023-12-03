@@ -1,5 +1,4 @@
 /* FONT IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap');
 
 /* MOBILE 425px DISPLAY */
 @media screen and (max-width: 425px) {
@@ -17,25 +16,32 @@
 
     .navbar{
         position: absolute;
-        bottom: 100%;
-        left: 0;
-        background-color: brown;    
-        width: 100%;
-        height: max-content;
+        top: 100%;
+        left: -100%;
+        background-color: rgb(0, 0, 0);    
+        width: 50%;
+        height: 100vh;
         transition: 0.3s;
         padding: 0;
         margin: 0;
+        padding: 3%;
+        
     }
 
     .navbar.active{
-        top: 100%;
+        left: 0;
     }
 
     .navbar ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
+       
     }
+
+    .navbar ul a{
+        color: #fff;
+    }
+
 
     .hamburger_menu{
         display: block;
@@ -45,71 +51,89 @@
 
 /*===== HERO START SECTION =====*/
 .hero_section{
-    margin-top: 20%;
-    /* display: flex;
-    flex-direction: column; */
-    height: max-content;
+    margin-top: 21%;
+    height: 900px;
+    width: 100%;
 }
 
 .bg_vector{
     background-image: url(/asset/vector/Component\ 19.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    height: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
+}
+
+.desck_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    height: 80%;
+    padding: 5% 0;
 }
 
 .bg_vector .desc_tittle{
-    position: relative;
-    left: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15%;
-   
+    width: 100%;
+   font-weight: 600;
+   padding: 5% 0;
+   position: relative;
+   bottom: 3rem;
 }
 
-.desc_tittle h1{
-    font-size: 30px;
-    text-align: center;
-    width: 400px ;
+.desck_container .desc_tittle h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 90%;
 }
 
-.bg_vector .desc_p{
+.bg_vector .desc_p {
+    width: 100%;
     position: relative;
-    left: 0;
     top: 0;
-    font-size: 18px;
-    width: 350px;
+    padding:  0;
+}
+
+.bg_vector .desc_p p {
+    width: 100%;
 }
 
 .btn_hero{
-    position: relative;
-    left: 0;
-    top: 6%;
-    width: 200px;
-    padding: 20px;
-    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 400px;
-    margin-left: 15%;
+    position: relative;
+    top: -13rem;
 }
+
+/* .hero_img img {
+  width: 15%;
+} */
 
 /*===== HERO END SECTION =====*/
 
 /*===== PROGRAM START SECTION =====*/
 .program_section{
-    width: 490px;
-    margin-top: -5rem;
-    height: 1650px;
+    width: 100%;
+}
+
+.program_section h1{
+    font-size: 1.5rem;
 }
 
 .btn_program{
@@ -127,37 +151,39 @@
 }
 
 .program_card{
-    width: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
 .english_card{
     margin: 0;
+    width: 90%;
 }
+
 /*===== PROGRAM END SECTION =====*/
 
 /*===== ABOUT START SECTION =====*/
 .about_section{
-    padding: 0;
+    padding: 3% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 490px;
+}
+
+.about_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about_img{
-    width: 490px;
     gap: 20px;
-}
-
-.about_img .photo1{
-    height: 270px;
-}
-
-.about_img .component{
-    height: 100px;
-    width: 400px ;
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about_teks{
@@ -167,9 +193,8 @@
 }
 
 .about_teks h1{
-    font-size: 30px;
-    width: 300px;
-
+    font-size: 1.5rem;
+    width: 100%;
 }
 
 .about_teks p{
@@ -178,63 +203,55 @@
 }
 
 .about_img2{
-    width: 490px;
     gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.about_img2 .photo1{
-    height: 270px;
-    width: 490px;
-}
-
-.about_img2 .component2{
-    height: 100px;
-    width: 400px ;
-    margin-left: 2rem;
-}
 /*===== ABOUT END SECTION =====*/
 
 /*===== TESTIMONI START SECTION =====*/
-.testimoni_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 490px;
-    margin-bottom: 2rem;
+
+.testimoni_section .testimoni_teks h2{
+    font-size: 1.5rem;
+}
+
+.testimoni_teks{
+    gap: 1rem;
 }
 
 .container_card_testimoni{
-    width: 490px;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.testimoni_card{
-    margin: 0;
-    max-width: 300px;
-    height: 390px;
+.container_card_testimoni .testimoni_card{
+    width: 80%;
 }
 
-.testimoni_desc{
-    font-size: 20px;
+.container_card_testimoni .testimoni_card .testimoni_desc{
+    font-size: 1rem;
+    width: 70%;
 }
 
-.testimoni_teks h2{
-    font-size: 25px;
-}
 
 .testimoni_teks p{
-    font-size: 20px;
-    width: 400px;
+    font-size: 1rem;
+    width: 90%;
+
 }    
+
+.testimoni_card .testimoni_profil p{
+    font-size: 1rem;
+}
 /*===== TESTIMONI END SECTION =====*/
 
 /*===== FOOTER START SECTION =====*/
 footer{
-    width: 490px;
+    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -261,7 +278,7 @@ footer{
 
 .footer_serti_container{
     width: 100%;
-    margin-top: 70%;
+    margin-top: 80%;
 }
 /*===== FOOTER END SECTION =====*/
 }

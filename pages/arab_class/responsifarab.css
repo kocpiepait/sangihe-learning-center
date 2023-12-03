@@ -1,0 +1,194 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap');
+
+/* MOBILE 425px DISPLAY */
+@media screen and (max-width: 425px) {
+/*===== HEADER START SECTION =====*/
+    .logo_img {
+        width: 200px;
+        height: 100px;
+        position: relative;
+        top: 9px;
+    }
+
+    header{
+        padding: 0 2%;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        background-color: rgb(0, 0, 0);    
+        width: 50%;
+        height: 100vh;
+        transition: 0.3s;
+        padding: 0;
+        margin: 0;
+        padding: 3%;
+        
+    }
+
+    .navbar.active{
+        left: 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .navbar ul a{
+        color: #fff;
+    }
+
+    .hamburger_menu{
+        display: block;
+        font-size: 40px;
+    }
+/*===== HEADER END SECTION =====*/
+
+/*===== ABOUT HEAD START SECTION =====*/
+       .english_section{
+        margin-top: 20%;
+       }
+
+       .english_container h1{
+        width: 100%;
+        font-size: 1.5rem;
+       }
+
+       .english_serti{
+           width: 90%;
+       }
+
+       .english_serti h2{
+           padding: 3% 0;
+       }
+
+       .english_serti img{
+           width: 90%;
+       }
+
+       .serti_img{
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+
+       .serti_img img{
+           width: 90%;
+       }
+/*===== ABOUT HEAD END SECTION =====*/
+
+/*===== ABOUT DESCK START SECTION =====*/
+       .next_section_container{
+        flex-wrap: wrap;
+        gap: 2rem;
+       }
+
+/*===== ABOUT LEMBAGA END SECTION =====*/
+
+/*===== ABOUT PROFIL GURU START SECTION =====*/
+    .pilpro_container{
+        width: 100%;
+        padding: 0;
+    }  
+
+    .pilpro_head{
+        text-align: center;
+        width: 70%;
+    }
+
+    .pilpro_card_container{
+        padding: 2% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .pilpro_card{
+        width: 70%;
+    }
+/*===== ABOUT PROFIL GURU END SECTION =====*/
+
+/*===== FOOTER START SECTION =====*/
+footer{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer_brand{
+    height: 100px;
+    width: 370px;
+    align-items: center;
+}
+
+.footer_container_fluid{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer_addres{
+    margin-bottom: 2rem;
+}
+
+.container_footer_content{
+    gap: 1rem;
+    width: 50%;
+}
+
+.footer_serti_container{
+    width: 100%;
+    margin-top: 80%;
+}
+/*===== FOOTER END SECTION =====*/
+}
+
+@media screen and (max-width: 1024px){
+    /* HERO START */
+
+    .english_container h1{
+        width: 50%;
+    }
+
+    .english_serti{
+        width: 100%;
+    }
+
+    .english_serti h2{
+        padding: 3% 0;
+    }
+
+    .english_serti img{
+        width: 90%;
+    }
+
+    .serti_img{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .serti_img img{
+        width: 90%;
+    }
+
+    .footer_brand{
+        width: 90%;
+    }
+
+   .footer_container_fluid{
+       width: 90%;
+   }
+}
+
+
+
