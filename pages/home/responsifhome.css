@@ -1,13 +1,99 @@
-/* FONT IMPORT */
+
+/* MOBILE 425px DISPLAY */
+@media screen and (max-width: 320px){
+    main .hero_section{
+        height: 800px;
+    }
+    
+
+    .hero_section .bg_vector .desck_container{
+        margin-top: 10%;
+    }
+
+    .bg_vector .desck_container .desc_tittle h1{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .hero_section .bg_vector .desck_container .desc_p{
+        top: -5%;
+        margin-bottom: 3rem;
+    }
+
+    .bg_vector .desck_container .desc_p p{
+        font-size: 1rem;
+        width: 100%;
+        top: 0;
+    }
+
+    .hero_section .bg_vector .btn_hero{
+        top: -5%;
+    }
+
+    .btn_program{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn_program button{
+        width: 80%;
+    }
+
+    .program_card .english_card{
+        width: 95%;
+    }
+
+    .card_class_usia{
+        margin-left: 25%;
+    }
+    
+
+    .footer_container_fluid{
+        margin-bottom: 15%;
+    }
+    
+    footer .footer_serti_container{
+        margin-top: 100%;
+    }
+}
+
+
+/* MOBILE 425px DISPLAY */
+@media screen and (max-width: 375px){    
+    
+    .bg_vector .desck_container{
+        height: max-content ;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .hero_section .bg_vector .desck_container .desc_p{
+        margin-bottom: 0;
+    }
+
+    .bg_vector .btn_hero{
+        position: relative;
+        top: 0;   
+    }
+
+    .about_teks p{
+        width: 100%;
+    }
+
+    footer .footer_serti_container{
+        margin-top: 90%;
+    }
+
+
+}
 
 /* MOBILE 425px DISPLAY */
 @media screen and (max-width: 425px) {
 /*===== HEADER START SECTION =====*/
-    .logo_img {
-        width: 200px;
-        height: 100px;
-        position: relative;
-        top: 9px;
+    .logo{
+        width: 56%;
     }
 
     header{
@@ -18,13 +104,12 @@
         position: absolute;
         top: 100%;
         left: -100%;
-        background-color: rgb(0, 0, 0);    
+        background-color: #3771C8;    
         width: 50%;
         height: 100vh;
         transition: 0.3s;
-        padding: 0;
         margin: 0;
-        padding: 3%;
+        padding: 0;
         
     }
 
@@ -35,11 +120,17 @@
     .navbar ul {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        width: 100%;
+        gap: 0;
+        margin: 0;
        
     }
 
     .navbar ul a{
         color: #fff;
+        border-bottom: 2px solid #2c599c;
+        margin: 0;
     }
 
 
@@ -51,9 +142,7 @@
 
 /*===== HERO START SECTION =====*/
 .hero_section{
-    margin-top: 21%;
-    height: 900px;
-    width: 100%;
+    height: 870px;
 }
 
 .bg_vector{
@@ -63,20 +152,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    height: 500px;
 }
 
-.desck_container{
+.hero_section .bg_vector .desck_container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 90%;
-    height: 80%;
+    height: 70%;
     padding: 5% 0;
+    margin-top: 3rem;
 }
 
-.bg_vector .desc_tittle{
+.bg_vector .desck_container .desc_tittle{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -94,11 +184,12 @@
     width: 90%;
 }
 
-.bg_vector .desc_p {
+.bg_vector .desck_container .desc_p {
     width: 100%;
     position: relative;
     top: 0;
     padding:  0;
+    margin-bottom: 3rem;
 }
 
 .bg_vector .desc_p p {
@@ -116,9 +207,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
     position: relative;
-    top: -13rem;
+    top: -5rem;
+    height: max-content;
+}
+
+.hero_section .hero_img img{
+    width: 90%;
+    height: 20%;
 }
 
 /* .hero_img img {
@@ -137,16 +234,18 @@
 }
 
 .btn_program{
-    width: 400px;
+    width: 95%;
+    flex-wrap: wrap;
 }
 
 .program_teks{
-    width: 329px;
+    width: 80%;
+    padding: 5% 0;
 }
 
 .program_teks p{
     font-size: 18px;
-    width: 270px;
+    width: 70%;
     font-weight: 300;
 }
 
@@ -199,7 +298,6 @@
 
 .about_teks p{
     font-size: 20px;
-    width: 400px;
 }
 
 .about_img2{
@@ -285,36 +383,26 @@ footer{
 
 @media screen and (max-width: 1024px){
     /* HERO START */
-    .hero_section{
-        margin-bottom: 0;
+    .hero_section .bg_vector{
+        height: 500px;
     }
 
-    .bg_vector{
-        width: 650px;
-        height: 600px;
-        background-size: contain;
+    .desck_container .desc_tittle{
+        width: 50%;
+        position: static;
     }
 
     .desc_tittle h1{
         font-size: 35px;
     }
 
-    .desc_p p{
+    .desck_container .desc_p{
+        width: 40%;
+    }
+
+    .desck_container .desc_p p{
         font-size: 18px;
-        width: 400px;
-        margin-bottom: 5rem;
-    }
-
-
-    .btn_hero{
-        position: relative;
-        top: 0;
-    }
-
-
-    .hero_img img{
-        width: 372px;
-        height: 558px;
+        width: 100%;
     }
 
     /* PROGRAM START */
@@ -377,5 +465,15 @@ footer{
    }
 }
 
+@media screen and (max-width: 1440px){
+    .bg_vector{
+        height: 600px;
+    }
+
+    .desck_container{
+        height: 100%;
+    }
+
+}
 
 

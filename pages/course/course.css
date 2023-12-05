@@ -37,12 +37,13 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    height: max-content;
+    width: 25%;
+
 }
 
-.logo_img{
-    width: 318px;
-    height: 105px;
+.logo .logo_img{
+    width: 100%;
 }
 
 .hamburger_menu{

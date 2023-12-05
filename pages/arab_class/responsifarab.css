@@ -1,15 +1,32 @@
 /* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap');
 
-/* MOBILE 425px DISPLAY */
+@media screen and (max-width: 375px){
+    main .english_section .english_container h1{
+        width: 80%;
+    }
+
+    .pilpro_card_container .pilpro_card{
+        width: 85%;
+    }
+    
+    footer .footer_container_fluid{
+        margin-bottom: 10%;
+    }
+
+    footer .footer_serti_container{
+        margin-top: 100%;
+    }
+
+}
+
+/* MOBILE 425px DISPLAY */ 
 @media screen and (max-width: 425px) {
 /*===== HEADER START SECTION =====*/
-    .logo_img {
-        width: 200px;
-        height: 100px;
-        position: relative;
-        top: 9px;
-    }
+.logo{
+    width: 56%;
+}
+
 
     header{
         padding: 0 2%;
@@ -19,13 +36,12 @@
         position: absolute;
         top: 100%;
         left: -100%;
-        background-color: rgb(0, 0, 0);    
+        background-color: #3771C8;    
         width: 50%;
         height: 100vh;
         transition: 0.3s;
-        padding: 0;
         margin: 0;
-        padding: 3%;
+        padding: 0;
         
     }
 
@@ -36,11 +52,17 @@
     .navbar ul {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        width: 100%;
+        gap: 0;
+        margin: 0;
        
     }
 
     .navbar ul a{
         color: #fff;
+        border-bottom: 2px solid #2c599c;
+        margin: 0;
     }
 
     .hamburger_menu{
@@ -51,12 +73,13 @@
 
 /*===== ABOUT HEAD START SECTION =====*/
        .english_section{
-        margin-top: 20%;
+        margin-top: 30%;
        }
 
-       .english_container h1{
-        width: 100%;
+       .english_section .english_container h1{
+        width: 70%;
         font-size: 1.5rem;
+        padding: 0;
        }
 
        .english_serti{
@@ -89,6 +112,23 @@
         flex-wrap: wrap;
         gap: 2rem;
        }
+
+       .next_section_container{
+           width: 90%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .next_section_container .next_card{
+           width: 80%;
+           padding: 5%;
+       }
+
+       .next_section_container .next_card_sec{
+        width: 80%;
+        padding: 5%;
+    }
 
 /*===== ABOUT LEMBAGA END SECTION =====*/
 

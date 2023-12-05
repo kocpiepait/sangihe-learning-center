@@ -22,7 +22,7 @@ header{
     right: 0;
     z-index: 999;
     border-bottom: 1px solid #faf1f1;
-    box-shadow: 0 1px 10px #c2b8b886;
+    box-shadow: 0 1px 10px #c2b8b886;    
 }
 
 .head_container{
@@ -37,12 +37,13 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    height: max-content;
+    width: 25%;
+
 }
 
-.logo_img{
-    width: 318px;
-    height: 105px;
+.logo .logo_img{
+    width: 100%;
 }
 
 .hamburger_menu{
@@ -71,8 +72,8 @@ header{
     justify-content: space-between;
     margin-top: 8%;
     flex-wrap: wrap;
-    height: max-content;
     width: 100%;
+    height: max-content;
 }
 
 .bg_vector{
@@ -80,8 +81,8 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
     padding: 3%;
+    height: 400px;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -103,7 +104,7 @@ header{
     font-weight: 600;
     font-size: 2rem;
     position: relative;
-    top: -4%;
+    top: 5%;
 }
 
 .bg_vector .desc_p{
@@ -115,7 +116,8 @@ header{
     padding: 0 8%;
     text-align: center;
     position: relative;
-    top: 3rem;
+    top: 5rem;
+    margin-bottom: 7rem;
 }
 
 .bg_vector .desc_p p{
@@ -124,11 +126,12 @@ header{
 
 .btn_hero{
     position: relative;
-    top: 6rem;
     width: 48%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    animation: btn_herobouncy 5s infinite linear;
+    transition: all 0.2s;
 }
 
 .btn_hero button{
@@ -137,7 +140,38 @@ header{
     padding: 15px;
     border: none;
     border-radius: 15px;
-   
+    cursor: pointer;
+    
+}
+
+.desck_container .btn_hero button:hover{
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000;
+}
+
+@keyframes btn_herobouncy{
+    0% {
+        top: 0em;
+      }
+      40% {
+        top: 0em;
+      }
+      43% {
+        top: -0.9em;
+      }
+      46% {
+        top: 0em;
+      }
+      48% {
+        top: -0.4em;
+      }
+      50% {
+        top: 0em;
+      }
+      100% {
+        top: 0em;
+      }
 }
 
 .btn_hero a{
@@ -176,7 +210,7 @@ header{
 .btn_program{
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    width: 40%;
     position: relative;
     top: 2%;
     
@@ -184,11 +218,17 @@ header{
 
 .btn_program button{
     color: #FAEDED;
-    width: 150px;
+    width:40%;
     padding: 15px;
     border: none;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.btn_program button:hover{
+    background-color: #000;
+    transition: 0.3s;
 }
 
 .btn_program .blue{
@@ -201,8 +241,8 @@ header{
 
 .program_teks{
     margin-top: 10%;
-    width: 466px;
-    height: 336px;
+    width: 30%;
+    height: max-content;
     border-radius: 15px;
     background-color: #86C5FF;
     font-family: 'Poppins', sans-serif;
@@ -213,10 +253,11 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5%;
 }
 
 .program_teks p{
-    width: 376px;
+    width: 100%;
 }
 
 .program_card{
@@ -329,6 +370,13 @@ header{
     padding: 15px;
     border: none;
     border-radius: 15px;
+}
+
+.card_class_btn button:hover{
+    background-color: transparent;  
+    cursor: pointer;
+    color: #000 ;
+    outline: 2px solid #000;
 }
 /* PROGRAM END */
 

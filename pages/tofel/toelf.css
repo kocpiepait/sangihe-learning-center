@@ -37,12 +37,13 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    height: max-content;
+    width: 25%;
+
 }
 
-.logo_img{
-    width: 318px;
-    height: 105px;
+.logo .logo_img{
+    width: 100%;
 }
 
 .hamburger_menu{
@@ -258,6 +259,12 @@ header{
         border-radius: 30px;
         font-weight: 600;
         font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .Pcard_btn button:hover{
+        background-color: transparent;
+        
     }
 /* ABOUT LEMBAGA END */
 /* MAIN END */

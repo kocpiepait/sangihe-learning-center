@@ -1,15 +1,27 @@
 /* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap');
 
+@media screen and (max-width: 375px){
+ main .About_Section_Profilguru .Profilguru_bg{
+        height: 6000px;
+    }
+
+    footer .footer_container_fluid{
+        margin-bottom: 10%;
+    }
+
+    footer .footer_serti_container{
+        margin-top: 100%;
+    }
+}
+
+
 /* MOBILE 425px DISPLAY */
 @media screen and (max-width: 425px) {
 /*===== HEADER START SECTION =====*/
-    .logo_img {
-        width: 200px;
-        height: 100px;
-        position: relative;
-        top: 9px;
-    }
+.logo{
+    width: 56%;
+}
 
     header{
         padding: 0 2%;
@@ -19,13 +31,12 @@
         position: absolute;
         top: 100%;
         left: -100%;
-        background-color: rgb(0, 0, 0);    
+        background-color: #3771C8;    
         width: 50%;
         height: 100vh;
         transition: 0.3s;
-        padding: 0;
         margin: 0;
-        padding: 3%;
+        padding: 0;
         
     }
 
@@ -36,12 +47,19 @@
     .navbar ul {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        width: 100%;
+        gap: 0;
+        margin: 0;
        
     }
 
     .navbar ul a{
         color: #fff;
+        border-bottom: 2px solid #2c599c;
+        margin: 0;
     }
+
 
     .hamburger_menu{
         display: block;
@@ -92,9 +110,10 @@
     .about_lembaga_container{
         width: 90%;
         padding: 0;
+        justify-content: flex-start;
     }
 
-    .lembaga_desck{
+    .about_lembaga_container .lembaga_desck{
         width: 95%;
     }
 
@@ -112,6 +131,11 @@
         width: 100%;
     }
 
+    .about_lembaga_container .lembaga_vector{
+        margin-top: 0;
+        width: 100%;
+    }
+
     .vector_img{
         width: 100%;
         padding: 3%;
@@ -124,10 +148,10 @@
 
 /*===== ABOUT PROFIL GURU START SECTION =====*/
     .About_Section_Profilguru{
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
-    .Profilguru_bg{
+    .About_Section_Profilguru .Profilguru_bg{
         width: 100%;
         height: 7000px;
         background-image: url(/asset/vector/Component\ 23.png);
@@ -171,87 +195,38 @@ footer{
 
 @media screen and (max-width: 1024px){
     /* HERO START */
-    .hero_section{
-        margin-bottom: 0;
+    .lembaga_desck{
+        width: 40%;
     }
 
-    .bg_vector{
-        width: 650px;
-        height: 600px;
-        background-size: contain;
+    .about_lembaga_container{
+        justify-content: flex-end;
+        gap: 1rem;
     }
 
-    .desc_tittle h1{
-        font-size: 35px;
+    .lembaga_img{
+        padding: 0;
     }
 
-    .desc_p p{
-        font-size: 18px;
-        width: 400px;
-        margin-bottom: 5rem;
-    }
-
-
-    .btn_hero{
-        position: relative;
-        top: 0;
-    }
-
-
-    .hero_img img{
-        width: 372px;
-        height: 558px;
-    }
-
-    /* PROGRAM START */
-    .program_section{
-        position: relative;
-        margin-top: 0;
-    }
-
-
-    /* ABOUT SECTION */
-    .about_img{
-        width: 100%;
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about_img .photo1{
+    .lembaga_img .lembaga_photo{
         width: 100%;
     }
 
-    .about_img .component{
-        width: 70%;
+    .lembaga_vector{
+        width: 50%;
+        margin-top: -20%;
     }
 
-    .about_img2{
-        width: 100%;
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about_img2 .photo1{
+    .lembaga_vector .vector_img{
         width: 100%;
     }
 
-    
-    .about_img2 .component2{
-        width: 70%;
-    }
-
-
-    /* TESTIMONI START */
-    .container_card_testimoni{
+    .lembaga_img .lembaga_photo img{
         width: 100%;
     }
 
-    .testimoni_card{
-        width: 390px;
+    .Profilguru_bg{
+        height: 2800px;
     }
 
     .footer_brand{
