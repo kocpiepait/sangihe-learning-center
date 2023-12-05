@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap');
 
 /* MOBILE 425px DISPLAY */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 720px) {
 /*===== HEADER START SECTION =====*/
 .logo{
     width: 56%;
