@@ -90,7 +90,7 @@
 }
 
 /* MOBILE 425px DISPLAY */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 720px) {
 /*===== HEADER START SECTION =====*/
     .logo{
         width: 56%;
