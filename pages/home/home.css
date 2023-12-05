@@ -77,7 +77,7 @@ header{
 }
 
 .bg_vector{
-    background-image: url(sangihe-learning-center/asset/vector/bg_vector.png);
+    background-image: url('./asset/vector/bg_vector.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
