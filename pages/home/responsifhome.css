@@ -130,6 +130,12 @@
        
     }
 
+    .navbar ul li{
+        width: 100%;
+        padding: 5% 0;
+        border-bottom: 2px solid #325ea0;
+    }
+
     .navbar ul a{
         color: #fff;
         border-bottom: 2px solid #2c599c;
