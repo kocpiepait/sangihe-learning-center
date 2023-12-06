@@ -54,7 +54,15 @@ header{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
 
+.navbar ul li{
+    list-style: none;
+   
+}
 
 .navbar a{
     margin: 10px; 
