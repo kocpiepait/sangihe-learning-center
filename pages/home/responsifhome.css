@@ -1,6 +1,6 @@
 
 /* MOBILE 425px DISPLAY */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 366px){
     main .hero_section{
         height: 800px;
     }
