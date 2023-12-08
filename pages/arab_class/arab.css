@@ -107,11 +107,15 @@ header{
     margin-bottom: 2rem;
 }
 
-.english_serti{
+.english_serti {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.english_serti img{
+    width: 90%;
 }
 
 .english_serti h2{
